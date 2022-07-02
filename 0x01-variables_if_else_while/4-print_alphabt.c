@@ -1,24 +1,23 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- *  main - Entry point
+ * main - print all letters of the alphabeth in lower case
  *
- *  Return: Always 0 (Success)
+ * Return: 0 if successful
  */
 int main(void)
 {
-	char a;
+	char var;
 
-	for (a = 'a'; a <= 'z' ; a++)
-	
-	if (a == 'q' || a == 'e')
+	for (var = 'a'; var <= 'z'; var++)
 	{
-	continue;
-	}
-	putchar (a);
-	return (0);
+		if (var == 'e' || var == 'q')
+			continue;
 
+		putchar(var);
+	}
+	putchar('\n');
+	return (0);
 }
 
